@@ -1,5 +1,9 @@
 /[Ll]ibrary/
+*/Library/metadata/
+*/[Ll]ibrary/metadata/*
+*/[Ll]ibrary/ShaderCache/*
 */[Tt]emp/
+*/[Tt]emp/*
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
@@ -23,6 +27,8 @@ ExportedObj/
 *.booproj
 *.svd
 *.pdb
+*.info
+*.log
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -33,3 +39,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+*.DS_Store
