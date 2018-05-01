@@ -5,8 +5,12 @@ public class PlayerCollision : MonoBehaviour {
 	public PlayerMovement movement;
 
 	void OnCollisionEnter(Collision collision) {
-		if (collision.collider.tag == "obstacle")
+		
+		if (collision.collider.tag == "obstacle") {
 //			movement.enabled = false;
-			Debug.Log("sd");
+			Debug.Log("hit obstacle");
+			movement.enabled = false;
+			FindObjectOfType <GameManager>().GameOver();
+		}
 	}
 }

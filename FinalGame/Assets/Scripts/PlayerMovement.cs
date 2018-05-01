@@ -11,6 +11,6 @@ public class PlayerMovement : MonoBehaviour {
 		rb.AddForce (forwardForce * Time.deltaTime, 0, 0);
 
 		if (Input.GetButton ("Jump"))
-			rb.AddForce (2000 * Time.deltaTime, 0, 0);
+			rb.AddForce (2000 * Time.deltaTime, -1000 * Time.deltaTime, 0);
 	}
 }
