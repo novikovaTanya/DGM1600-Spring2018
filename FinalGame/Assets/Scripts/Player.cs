@@ -22,7 +22,15 @@ public class Player : ScriptableObject
 		Debug.Log ("Hello, " + playerName);
 	}
 
-	public Nicknames PickName(int size) {
+	private Nicknames PickName(int size) {
 		return (Nicknames)Random.Range (0, size - 1);
+	}
+
+	public bool isLucky() {
+		return (bool)(Random.value > 0.5f);
+	}
+
+	public bool isWeak() {
+		return health < 20;
 	}
 }
