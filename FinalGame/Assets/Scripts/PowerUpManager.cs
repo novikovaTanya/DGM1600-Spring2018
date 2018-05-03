@@ -11,6 +11,7 @@ public class PowerUpManager : MonoBehaviour {
 			Player player = other.GetComponent <PlayerManager> ().player;
 			player.ApplyPowerUp (powerUp);
 			Debug.Log (player.playerName);
+			Destroy (gameObject);
 		}
 	}
 }
