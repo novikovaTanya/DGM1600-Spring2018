@@ -11,7 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64210fa4e911d44319a1971ae22ca1c3, type: 3}
   m_Name: DefaultMovement
   m_EditorClassIdentifier: 
-  speed: 10
-  jumpSpeed: 10
-  gravity: 20
-  direction: {x: 0, y: -0.32825947, z: 0}
+  config: {fileID: 11400000, guid: 8b9f56d7462f14b0fbcb72cca2a47226, type: 2}
+  direction: {x: 0, y: -1.9070411, z: 0}

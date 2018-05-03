@@ -2,18 +2,44 @@
 
 public class Enemy : MonoBehaviour {
 
-	public float speed;
-	private Transform target;
+	public Config config;
+	public Transform target;
+	public float speed = 3f;
 
-	void Start() {
+
+	void Start () {
 		target = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
 	}
 
 	void Update() {
-		if(Vector2.Distance(transform.position, target.position) > 1)
-			transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-	}
+		transform.LookAt(target.position);
+		transform.Rotate(new Vector3(0, -90, 0), Space.Self);
 
+		if (Vector2.Distance(transform.position, target.position) > 3f)
+			transform.Translate(new Vector2(config.speed * Time.deltaTime, 0) );
+	}
+//	private Transform target;
+//
+//	void Start() {
+//		target = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
+//	}
+//
+//	void Update() {
+////		if(Vector2.Distance(transform.position, target.position) > 3)
+////			transform.position = Vector2.MoveTowards(transform.position, target.position, config.speed * Time.deltaTime);
+//	}
+//
+//
+//	void FixedUpdate () {
+//		transform.LookAt (target.position);
+//		transform.Rotate(new Vector3(0,-90,0),Space.Self);
+//
+//		if(Vector2.Distance(transform.position, target.position) > 3)
+//			transform.Translate(new Vector2(3f * Time.deltaTime, 0) );
+//		
+//		Debug.DrawLine (transform.position, target.position);
+////		transform.position -= transform.TransformDirection (Vector2.up) * 0.1f ;
+//	}
 
 	void OnCollisionEnter(Collision collision) {
 		//		if (collision.collider.tag == "enemy") {
