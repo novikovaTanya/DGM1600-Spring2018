@@ -10,7 +10,6 @@ public class PlayerMovement : ScriptableObject {
 
 	public void Move(CharacterController controller, Transform transform) {
 		if (controller.isGrounded) {
-			Debug.Log (Input.GetButton("Jump"));
 			direction.x = Input.GetAxis("Horizontal") * config.speed;
 			direction.y = (Input.GetButton("Jump")) ? config.jumpSpeed : 0;
 
