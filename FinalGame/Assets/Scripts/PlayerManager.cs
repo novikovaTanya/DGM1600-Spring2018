@@ -14,13 +14,21 @@ public class PlayerManager : MonoBehaviour {
 		controller = GetComponent<CharacterController>();
 	}
 
-	void OnCollisionEnter(Collision collision) {
-		if (collision.collider.tag == "enemy" && player.isWeak()) {
-			FindObjectOfType <GameManager>().GameOver();
-		}
+	private void GameOver() {
+		FindObjectOfType <GameManager>().GameOver();
 	}
 
-	void Update() {
+	void OnCollisionEnter(Collision collision) {
+		if (collision.collider.tag == "enemy" && player.isWeak())
+			GameOver();
+	}
+
+	public void Update() {
+		if (player.health < 0)
+			GameOver();
+		else if (player.health > 100)
+			player.health = 100;
+		
 		movement.Move(controller, transform);
 	}
 }

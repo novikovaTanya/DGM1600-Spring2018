@@ -22,6 +22,8 @@ public class Player : ScriptableObject
 		Debug.Log ("Hello, " + playerName);
 	}
 
+
+
 	private Nicknames PickName(int size) {
 		return (Nicknames)Random.Range (0, size - 1);
 	}
@@ -35,18 +37,19 @@ public class Player : ScriptableObject
 	}
 
 	public void ApplyPowerUp(PowerUp powerUp) {
-		Debug.Log (powerUp.name); // Points
-
 		switch (powerUp.name)
 		{
 		case "Points":
 			score += powerUp.value;
+			Debug.Log ("Added " + powerUp.value + " points. Current score: " + score);
 			break;
 		case "Health":
 			health += powerUp.value;
+			Debug.Log ("Added " + powerUp.value + " to health. Current health: " + health);
 			break;
 		case "Damage":
 			health -= powerUp.value;
+			Debug.Log (playerName +	" was damaged by " + powerUp.value + ". Current health: " + health);
 			break;
 		default:
 			break;
