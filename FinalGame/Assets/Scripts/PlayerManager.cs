@@ -24,8 +24,10 @@ public class PlayerManager : MonoBehaviour {
 	}
 
 	public void Update() {
-		if (player.health < 0)
-			GameOver();
+		if (player.health < 0) {
+			GameOver ();
+			player.health = 100;
+		}
 		else if (player.health > 100)
 			player.health = 100;
 		
