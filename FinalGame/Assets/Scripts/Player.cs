@@ -33,4 +33,24 @@ public class Player : ScriptableObject
 	public bool isWeak() {
 		return health < 20;
 	}
+
+	public void ApplyPowerUp(PowerUp powerUp) {
+		Debug.Log (powerUp.name); // Points
+
+		switch (powerUp.name)
+		{
+		case "Points":
+			score += powerUp.value;
+			break;
+		case "Health":
+			health += powerUp.value;
+			break;
+		case "Damage":
+			health -= powerUp.value;
+			break;
+		default:
+			break;
+		}
+
+	}
 }
