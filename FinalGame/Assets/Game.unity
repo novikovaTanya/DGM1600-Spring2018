@@ -351,8 +351,8 @@ Transform:
   m_Children:
   - {fileID: 135486771}
   - {fileID: 23106068}
-  - {fileID: 2105951712}
   - {fileID: 1449068215}
+  - {fileID: 2105951712}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -398,19 +398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
       propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.50868666
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.5086866
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5086866
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
@@ -784,23 +772,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1797149757369724, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
       propertyPath: m_Name
       value: Coin (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.50868666
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.5086866
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5086866
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
@@ -2499,18 +2475,6 @@ Prefab:
       propertyPath: m_Name
       value: Coin (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.50868666
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.5086866
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5086866
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
   m_IsPrefabParent: 0
@@ -2726,7 +2690,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.50868666
+      value: 0.2351161
       objectReference: {fileID: 0}
     - target: {fileID: 4827501078427078, guid: b49d5263b75b9461dbddeff05ca9f216, type: 2}
       propertyPath: m_LocalScale.y
