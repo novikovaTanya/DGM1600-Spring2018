@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp: {fileID: 11400000, guid: 0aa192d30d91f419d82974c0b313ef88, type: 2}
+  effect: {fileID: 4606983454127388, guid: 9acc5a3f55e49401c9b050184f4a30b8, type: 2}
 --- !u!135 &135063877988259944
 SphereCollider:
   m_ObjectHideFlags: 1
