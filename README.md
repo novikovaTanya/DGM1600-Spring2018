@@ -1,1 +1,4 @@
-# DGM1600-Spring2018
+# UVU DGM-1600
+Spring 2018
+
+**Final proect**: *2D Side Scroller* 
