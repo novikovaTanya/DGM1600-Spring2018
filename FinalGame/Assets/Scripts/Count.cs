@@ -11,7 +11,6 @@ public class Count : MonoBehaviour {
 		countText.text = count.ToString("000");
 
 		if (count / 10000 > 1)
-			// TODO: change state
 			Debug.Log ("Reached max time");
 	}
 }

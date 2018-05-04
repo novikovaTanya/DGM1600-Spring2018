@@ -19,10 +19,7 @@ public class Player : ScriptableObject
 		}
 
 		playerName = nickname.ToString();
-		Debug.Log ("Hello, " + playerName);
 	}
-
-
 
 	private Nicknames PickName(int size) {
 		return (Nicknames)Random.Range (0, size - 1);
@@ -54,6 +51,5 @@ public class Player : ScriptableObject
 		default:
 			break;
 		}
-
 	}
 }
